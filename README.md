@@ -19,10 +19,37 @@ Share your project with the following GitHub users:
 - vhaine-tb
 - gabrielreis-tb
 
-## Example cURL
+1. Clone the repository:
 ```
-curl -X POST -F "image=@extracted_page_xyz.png" "http://localhost:3000/run-inference?type=wall"
-curl -X POST -F "image=@extracted_page_xyz.png" "http://localhost:3000/run-inference?type=room"
-curl -X POST -F "image=@extracted_page_xyz.png" "http://localhost:3000/run-inference?type=page_info"
-curl -X POST -F "image=@extracted_page_xyz.png" "http://localhost:3000/run-inference?type=tables"
+git clone https://github.com/ammarfitwalla/ml-eng-test.git
+```
+2. Change the directory
+```
+cd ml-eng-test
+```
+3. Create a Directory
+```
+CubiCasa
+```
+4. Download the trained model:  
+Due to size constraints, the trained model file is not included in this repository. Since this repository has been forked from another repository, Git LFS (Large File Storage) cannot be used to add larger files. You need to manually download the model using the following link:
+    - [Download the trained CubiCasa model](https://drive.google.com/file/d/1gRB7ez1e4H7a9Y09lLqRuna0luZO5VRK/view)
+
+Once downloaded, place the model file in the `CubiCasa` directory.
+
+4. Build the Docker container:
+```
+docker build -t docker-group .
+```
+5. Run the Docker container:
+```
+sudo docker run -d -p 3000:3000 docker-group
+```
+## Usage
+
+```
+curl -X POST "http://127.0.0.1:3000/predict/room" -H "Content-Type: multipart/form-data" -F "file=@F1_scaled.png" --output output_room.png
+curl -X POST "http://127.0.0.1:3000/predict/icon" -H "Content-Type: multipart/form-data" -F "file=@F1_scaled.png" --output output_icon.png
+curl -X POST "http://127.0.0.1:3000/predict/detect_wall" -H "Content-Type: multipart/form-data" -F "file=@F1_scaled.png" --output output_walls.png
+
 ```
