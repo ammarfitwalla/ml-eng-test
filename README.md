@@ -13,6 +13,9 @@ Good luck!
 ## Full test description
 [Senior Machine Learning Engineer.pdf](https://github.com/user-attachments/files/16702909/Senior.Machine.Learning.Engineer.pdf)
 
+## Full test Solution Document
+[ml-eng-test-solution.pdf](https://github.com/user-attachments/files/16702909/Senior.Machine.Learning.Engineer.pdf)
+
 
 ## PS
 Share your project with the following GitHub users:
@@ -29,7 +32,7 @@ cd ml-eng-test
 ```
 3. Create a Directory
 ```
-CubiCasa
+mkdir CubiCasa
 ```
 4. Download the trained model:  
 Due to size constraints, the trained model file is not included in this repository. Since this repository has been forked from another repository, Git LFS (Large File Storage) cannot be used to add larger files. You need to manually download the model using the following link:
@@ -48,8 +51,9 @@ sudo docker run -d -p 3000:3000 docker-group
 ## Usage
 
 ```
+curl -X POST "http://127.0.0.1:3000/predict/detect_wall" -H "Content-Type: multipart/form-data" -F "file=@test_wall.png" --output output_walls.png
+curl -X POST "http://127.0.0.1:3000/predict/detect_wall" -H "Content-Type: multipart/form-data" -F "file=@test_wall_2.png" --output output_walls_2.png
 curl -X POST "http://127.0.0.1:3000/predict/room" -H "Content-Type: multipart/form-data" -F "file=@F1_scaled.png" --output output_room.png
 curl -X POST "http://127.0.0.1:3000/predict/icon" -H "Content-Type: multipart/form-data" -F "file=@F1_scaled.png" --output output_icon.png
-curl -X POST "http://127.0.0.1:3000/predict/detect_wall" -H "Content-Type: multipart/form-data" -F "file=@F1_scaled.png" --output output_walls.png
 
 ```
