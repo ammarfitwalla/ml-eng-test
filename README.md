@@ -14,7 +14,7 @@ Good luck!
 [Senior Machine Learning Engineer.pdf](https://github.com/user-attachments/files/16702909/Senior.Machine.Learning.Engineer.pdf)
 
 ## Full test Solution Document
-[ml-eng-test-solution.pdf](https://github.com/user-attachments/files/16702909/Senior.Machine.Learning.Engineer.pdf)
+[ml-eng-test-solution.pdf](https://github.com/ammarfitwalla/ml-eng-test/blob/main/ml_eng_test_solution/Documents/solution_approach_doc.pdf)
 
 
 ## PS
@@ -29,6 +29,7 @@ git clone https://github.com/ammarfitwalla/ml-eng-test.git
 2. Change the directory
 ```
 cd ml-eng-test
+cd ml_eng_test_solution
 ```
 3. Create a Directory
 ```
