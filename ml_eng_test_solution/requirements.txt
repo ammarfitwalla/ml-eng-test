@@ -1,0 +1,15 @@
+uvicorn
+fastapi
+fastapi[all]
+torch
+torchvision
+pillow
+matplotlib==3.0.3
+lmdb
+opencv-python
+scikit-image
+svgpathtools
+shapely
+
+paddlepaddle
+paddleocr
