@@ -13,14 +13,18 @@ Good luck!
 ## Full test description
 [Senior Machine Learning Engineer.pdf](https://github.com/user-attachments/files/16702909/Senior.Machine.Learning.Engineer.pdf)
 
-## Full test Solution Document
-[ml-eng-test-solution.pdf](https://github.com/ammarfitwalla/ml-eng-test/blob/main/ml_eng_test_solution/Documents/solution_approach_doc.pdf)
-
-
 ## PS
 Share your project with the following GitHub users:
 - vhaine-tb
 - gabrielreis-tb
+
+## Full test Solution Document
+[ml-eng-test-solution.pdf](https://github.com/ammarfitwalla/ml-eng-test/blob/main/ml_eng_test_solution/Documents/solution_approach_doc.pdf)
+
+## Similar work experience document
+[similar_work_experience.pdf](https://github.com/ammarfitwalla/ml-eng-test/blob/main/ml_eng_test_solution/Documents/similar_work_experience.pdf)
+
+## Steps to build this project
 
 1. Clone the repository:
 ```
